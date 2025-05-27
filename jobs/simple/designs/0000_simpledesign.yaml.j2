@@ -3,7 +3,7 @@ manufacturers:
   - "!create_or_update:name": "{{ manufacturer }}"
     description: "{{ manufacturer }} Systems"
     platforms:
-      - "!create_or_update:name": "{{ Cisco IOS }}"
+      - "!create_or_update:name": "Cisco IOS"
         description: "{{ platform }} Platform"
         roles:
           - "!create_or_update:name": "Branch:Loopback"
