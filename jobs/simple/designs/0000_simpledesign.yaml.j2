@@ -4,11 +4,8 @@ manufacturers:
     description: "{{ manufacturer }} Systems"
     platforms:
       - "!create_or_update:name": "Cisco IOS"
-        description: "{{ platform }} Platform"
-        roles:
-          - "!create_or_update:name": "Branch:Loopback"
-            manufacturer__name: "{{ manufacturer }}"
-            network_driver: "cisco_ios"
+        manufactorer_name: "{{ manufacturer }}"
+        network_driver: "cisco_ios"
 
 locations:
   - "!create_or_update:name": "Greece"
